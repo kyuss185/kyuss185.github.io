@@ -1,0 +1,417 @@
+@charset "UTF-8";
+html {
+    font-size: 62.5%
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/*body統一設定*/
+
+body {
+    background: #151515 url("../images/程式碼畫面01.jpg") no-repeat fixed left bottom;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: noto sans cjk sc;
+}
+
+
+/*nav區域開始*/
+
+
+/*logo設定*/
+
+.logo {
+    width: 50px;
+    transition: transform 0.3s;
+    float: left;
+    margin-left: 54px;
+}
+
+
+/*logo動態效果*/
+
+.logo:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+
+/*導覽列-與上方右方距離-文字位置*/
+
+.navbar {
+    margin-top: 26px;
+    margin-right: 110px;
+    text-align: right;
+}
+
+
+/*導覽列-按鈕設定*/
+
+.navbar .nav-item {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+
+/*導覽列連結的樣式設定*/
+
+.navbar .nav-item a {
+    display: inline-block;
+    padding: 9px 17px;
+    color: #f0f0f0;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+/*導覽列-DOWNLOAD按鈕設定*/
+
+.nav-item.active {
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+
+/*導覽列-DOWNLOAD按鈕的動態效果*/
+
+.nav-item.active a:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.5s
+}
+
+
+/*header區域範圍設定*/
+
+.header {
+    padding: 92px 20px 102px;
+}
+
+
+/*header主標題*/
+
+.site-title {
+    margin: 50px 0 40px;
+    margin-bottom: 20px;
+    font-size: 7.6rem;
+}
+
+
+/*header簡短描述*/
+
+.site-description {
+    margin: 0 0 30px;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+    font-family: lucida calligraphy;
+}
+
+.site-description::before,
+.site-description::after {
+    content: ";
+ display: inline-block;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+    background-color: #f0f0f0;
+    vertical-align: middle;
+}
+
+
+/*header按鈕群基本設定*/
+
+.button {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    font-size: 1.2rem;
+    font-family: adobe gothic std;
+}
+
+
+/*header右方按鈕設定*/
+
+.button-normal {
+    color: #f0f0f0;
+    border: 2px solid;
+}
+
+
+/*header右方按鈕的動態效果*/
+
+.button-normal:hover {
+    background-color: #f0f0f0;
+    color: black;
+    transition: 0.5s
+}
+
+
+/*header左方按鈕設定*/
+
+.button-showy {
+    color: #f0f0f0;
+    background-color: rgb(185, 157, 112);
+}
+
+
+/*header左方按鈕的動態效果*/
+
+.button-showy:hover {
+    background-color: rgb(150, 126, 64);
+    transition: 0.5s
+}
+
+
+/*header左右按鈕設定*/
+
+.buttons .button {
+    margin: 10px;
+}
+
+
+/*nav區域結束*/
+
+
+/*內容一開始*/
+
+
+/*內容一區塊的設定*/
+
+.content {
+    padding: 80px 0px;
+    background-color: #ebebeb;
+    color: #333;
+}
+
+
+/*介紹區域設定*/
+
+.introduction-wrapper {
+    display: table;
+    width: 99%;
+    margin: 25px auto 0;
+    table-layout: fixed;
+}
+
+
+/*介紹小區塊設定*/
+
+.introduction-box {
+    display: table-cell;
+}
+
+
+/*介紹標題*/
+
+.introduction-title {
+    margin: 40px 20px 20px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+/*介紹文字標題*/
+
+.introduction-text {
+    margin: 0 20px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+/*內容一結束*/
+
+
+/*內容二開始*/
+
+
+/*內容二區塊的設定*/
+
+.how-to-works {
+    padding: 80px 0px;
+    height: 495px;
+    background-color: #c6c5c5;
+    color: #fff;
+}
+
+
+/*如何使用標題設定*/
+
+.works-heading {
+    margin: 0 15px;
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+
+/*如何使用區域設定*/
+
+.how-to-works-wrapper {
+    display: table;
+    width: 99%;
+    margin: 70px auto 0;
+    table-layout: fixed;
+}
+
+
+/*如何使用小區塊設定*/
+
+.how-to-works-box {
+    display: table-cell;
+}
+
+
+/*如何使用圖片尺寸設定*/
+
+.how-to-works-box img {
+    width: 92%;
+}
+
+
+/*內容二結束*/
+
+
+/*內容三開始*/
+
+
+/*內容三區塊的設定*/
+
+.drop-dead {
+    padding: 80px 0px;
+    height: 495px;
+    background-color: #ebebeb;
+    color: #333;
+    text-align: left;
+}
+
+
+/*偽影片圖片設定*/
+
+.video-img {
+    float: left;
+    margin-left: 128px;
+}
+
+
+/*內容區塊設定*/
+
+.drop-dead-box {
+    float: right;
+    width: 470px;
+    height: 320px;
+    margin-right: 130px;
+}
+
+
+/*drop-dead標題設定*/
+
+.drop-dead-heading {
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+
+/*drop-dead內容設定*/
+
+.drop-dead-wrapper {
+    display: table;
+    margin: 45px auto 0;
+}
+
+
+/*drop-dead按鈕群基本設定*/
+
+.buttons-drop-dead {
+    display: inline-block;
+    width: 500px;
+    padding: 40px 0px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    font-size: 1.2rem;
+    font-family: adobe gothic std;
+}
+
+
+/*drop-dead左方按鈕設定*/
+
+.button-showy-drop-dead {
+    color: #f0f0f0;
+    background-color: rgb(102, 137, 131);
+    width: 180px;
+    height: 48px;
+    text-align: center
+}
+
+
+/*drop-dead左方按鈕的動態效果*/
+
+.button-showy-drop-dead:hover {
+    background-color: rgb(36, 73, 80);
+    transition: 0.5s
+}
+
+
+/*drop-dead右方按鈕設定*/
+
+.button-normal-drop-dead {
+    background-color: #fff;
+    color: #333;
+    width: 150px;
+    height: 48px;
+    text-align: center
+}
+
+
+/*drop-dead右方按鈕的動態效果*/
+
+.button-normal-drop-dead:hover {
+    background-color: #c6c5c5;
+    color: #fff;
+    transition: 0.5s
+}
+
+
+/*drop-dead左右按鈕設定*/
+
+.buttons-drop-dead .button {
+    margin: 7px;
+}
+
+
+/*內容三結束*/
+
+
+/*內容四開始*/
+
+
+/*share-it區塊的設定*/
+
+.share-it {
+    padding: 80px 0px;
+    height: 310px;
+    background-color: #fff;
+    color: #333;
+}
+
+
+/*share-it標題設定*/
+
+.shrae-it-heading {
+    margin: 0 15px;
+    font-size: 4.5rem;
+    font-weight: 900;
+}
